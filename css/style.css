@@ -2,14 +2,14 @@
 
 body{
     font-family: "Montserrat", sans-serif;
-    background: #602b7a;
+    background: #595959;
     color: white;
     /* start_screen */
 
 position: relative;
 
 
-background: linear-gradient(113.13deg, #642C7C 2.99%, #8D3EAF 54.5%, #B650E2 105.36%);
+background: linear-gradient(113.13deg, #3f3f3f 2.99%, #656565 54.5%, #9f9f9f 105.36%);
 
 }
 
