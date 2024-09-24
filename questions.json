@@ -1,0 +1,102 @@
+[
+    {
+        "question": "Translate 'яблуко' into English.",
+        "correct": "Apple",
+        "answers": [
+            "Pear",
+            "Apple",
+            "Banana",
+            "Grape"
+        ]
+    },
+    {
+        "question": "Translate 'друзі' into English.",
+        "correct": "Friends",
+        "answers": [
+            "Friends",
+            "Family",
+            "Neighbors",
+            "Colleagues"
+        ]
+    },
+    {
+        "question": "Translate 'книга' into English.",
+        "correct": "Book",
+        "answers": [
+            "Notebook",
+            "Book",
+            "Page",
+            "Library"
+        ]
+    },
+    {
+        "question": "Translate 'стіл' into English.",
+        "correct": "Table",
+        "answers": [
+            "Table",
+            "Chair",
+            "Desk",
+            "Shelf"
+        ]
+    },
+    {
+        "question": "Translate 'кіт' into English.",
+        "correct": "Whale",
+        "answers": [
+            "Cat",
+            "Fish",
+            "Whale",
+            "Shark"
+        ]
+    },
+    {
+        "question": "Translate 'сонце' into English.",
+        "correct": "Sun",
+        "answers": [
+            "Moon",
+            "Star",
+            "Sun",
+            "Cloud"
+        ]
+    },
+    {
+        "question": "Translate 'собака' into English.",
+        "correct": "Dog",
+        "answers": [
+            "Cat",
+            "Dog",
+            "Mouse",
+            "Rabbit"
+        ]
+    },
+    {
+        "question": "Translate 'вода' into English.",
+        "correct": "Water",
+        "answers": [
+            "Fire",
+            "Water",
+            "Juice",
+            "Milk"
+        ]
+    },
+    {
+        "question": "Translate 'море' into English.",
+        "correct": "Sea",
+        "answers": [
+            "Ocean",
+            "Lake",
+            "River",
+            "Sea"
+        ]
+    },
+    {
+        "question": "Translate 'дім' into English.",
+        "correct": "House",
+        "answers": [
+            "House",
+            "Apartment",
+            "Building",
+            "Cottage"
+        ]
+    }
+]

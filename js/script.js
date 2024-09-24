@@ -42,33 +42,25 @@ function getRandomSign(){
     return signs[i]
 }
 
-class Question{
-    constructor(){
-        let a = randint(1, 40)
-        let b = randint(1, 40)
-        let sign = getRandomSign()
-        this.question = `${a} ${sign} ${b}`
-        if (sign == '+'){
-            this.correct = a+b 
-        } else if(sign == '-'){
-             this.correct = a-b 
-        }
-        else if(sign == '*'){
-             this.correct = a*b 
-        }
-        else if(sign == '/'){
-            let answer = a/b *100
-            this.correct =  Math.round(answer) /100
-        }
-    
-        this.answers = [
-            this.correct,
-            randint(this.correct - 14, this.correct - 7 ),
-            randint(this.correct +  1, this.correct + 7 ),
-            randint(this.correct - 15, this.correct - 7 ),
-            randint(this.correct -7, this.correct- 1 ),
+async function getQuestions (){
+    let response = await fetch("questions.json")
+    let questions = await response.json()
+    return questions
+}
 
-        ]
+let questions_list = []
+
+getQuestions ().then(function (questions) {
+    questions_list = questions
+    console.log(questions_list)
+})
+
+class Question{
+    constructor(question, correct_answer, answers){
+        this.question = question
+        this.correct_answer = correct_answer
+        this.answers = answers
+       
         shuffle(this.answers)
     }
     display(){
@@ -77,10 +69,8 @@ class Question{
             answer_buttons[i].innerHTML = this.answers[i]
         }
     }
-
 }
 let quiz_time = 5
-let current_question = new Question()
 let points = 0
 let total_question_count = 0
 
