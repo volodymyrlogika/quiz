@@ -55,21 +55,7 @@ getQuestions ().then(function (questions) {
     console.log(questions_list)
 })
 
-class Question{
-    constructor(question, correct_answer, answers){
-        this.question = question
-        this.correct_answer = correct_answer
-        this.answers = answers
-       
-        shuffle(this.answers)
-    }
-    display(){
-        question_field.innerHTML = this.question
-        for (let i = 0; i < this.answers.length; i+=1){
-            answer_buttons[i].innerHTML = this.answers[i]
-        }
-    }
-}
+
 let quiz_time = 5
 let points = 0
 let total_question_count = 0
@@ -90,7 +76,7 @@ function displayResult(){
 start_btn.addEventListener("click", function(){
     start_page.style.display = 'none'
     main_page.style.display = 'flex'
-    current_question = new Question()
+    current_question = question_list[randint(0, questions_list.length-1)]
     current_question.display()
     setTimeout(displayResult, quiz_time * 1000)
 })
